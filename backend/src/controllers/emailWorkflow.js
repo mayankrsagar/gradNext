@@ -67,7 +67,7 @@ export const trackClick = async (req, res) => {
     }
 
     // Redirect user to payment page
-    return res.redirect('https://example.com/payment');
+    return res.redirect('https://grad-next-six.vercel.app/payment-success');
   } catch {
     return res.status(500).end();
   }
