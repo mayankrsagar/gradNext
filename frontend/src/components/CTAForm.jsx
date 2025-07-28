@@ -8,7 +8,7 @@ export default function CTAForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:5000/api/cohort/submit', {
+      const res = await fetch('https://gradnext.onrender.com/api/cohort/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
